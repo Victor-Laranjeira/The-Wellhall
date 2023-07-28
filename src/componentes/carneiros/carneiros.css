@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  border-bottom: 1px solid #002C37;
+}
+
+.welcome {
+  margin: 0;
+  padding-top: 25px;
+  width: fit-content;
+  height: fit-content;
+  font-size: 16px;
+  font-weight: 200;
+  font-family: 'Goudy Bookletter 1911', serif;
+  color: white;
+}
+
+.beachName {
+  margin: 0;
+  width: fit-content;
+  height: content;
+  font-size: 46px;
+  font-weight: 200;
+  font-family: 'Italiana', serif;
+  color: white;
+}
+
+.beachBody {
+  height: 80vh;
+  background-image: linear-gradient(to top, rgba(0, 44, 55, 1), rgba(0, 100, 125, 0.6)), url(../../images/muroAlto.jpg);
+  /* background-color: linear-gradient(to top, #002C37, #00647d); */
+}
+
+.beachColumn {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  justify-content: space-between;
+  justify-items: center;
+  height: 100%;
+}
+
+/* .beachListContainer {
+  display: flex;
+  flex-direction: row;
+  height: 67vh;
+} */
+
+.rightArrowContainer {
+  align-self: center;
+
+  background: red;
+}
+
+.beachList {
+  margin-left: 10%;
+  margin-right: 10%; 
+  width: 80%;
+  height: 80%;
+  z-index: 2;
+}
+
+.imageContainer {
+  margin-top: 45px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 47);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.resortInfoContainer {
+  height: 100%;
+}
+
+.resortNameContainer {
+  display: flex;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #FFC875;
+  color: #042E38;
+  text-align: center;
+  justify-content: center;
+}
+
+.resortName {
+  align-self: center;
+}
+
+.resortPriceContainer {
+  display: flex;
+  height: 50px;
+  margin: 25px 0px;
+  border-radius: 50px;
+  background-color: #FFC875;
+  color: #042E38;
+  text-align: center;
+  justify-content: center;
+}
+
+.resortPrice {
+  align-self: center;
+  width: 90%;
+}
+
+.resortSpaceContainer {
+  display: flex;
+  height: 20px;
+  border-radius: 50px;
+  background-color: #FFC875;
+  color: #042E38;
+  text-align: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.resortSpace {
+  align-self: center;
+}

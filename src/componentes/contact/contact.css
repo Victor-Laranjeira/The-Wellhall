@@ -1,0 +1,76 @@
+.contactMain {
+  display: flex;
+  height: 450px;
+  background-image: linear-gradient(to top, rgb(71, 47, 30), rgba(121, 87, 63, 0.8)), url(../../images/03.BEACH-CLUB-GERAL-1500x710.jpg);
+  justify-content: center;
+}
+
+.contactBody {
+  display: flex;
+  width: 80vw;
+  align-items: center;
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  width: 20%;
+  background-color: #33251C;
+}
+
+.contactInfo {
+  display: flex;
+  height: 100%;
+  margin-left: 15px;
+  column-gap: 15px;
+  align-items: center;
+  color: white;
+}
+
+.contactImageContainer {
+  position: relative;
+  width: 130px;
+  height: 40%;
+  background-color: #33251C;
+}
+
+.contactImageCircle {
+  display: flex;
+  position: absolute;
+  top: -11%;
+  left: 15%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #33251C;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactImage {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
+
+.resumeContainer {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 30%;
+  margin-left: 120px;
+  justify-content: center;
+  text-align: justify;
+}
+
+.resumeName {
+  padding: 5px;
+  font-size: 20px;
+  color: white;
+}
+
+.resumeContent {
+  padding: 5px;
+  color: white;
+}

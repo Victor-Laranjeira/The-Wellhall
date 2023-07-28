@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+  height: 50px;
+  background-color: #002C37 ;
+  justify-content: center;
+}
+
+.footerContainer {
+  width: 80vw;
+  height: 45px;
+  background-color: #002C37;
+}
+
+.footerLogoContainer {
+  float: right;
+  height: 45px;
+  width: 45px;
+}
+
+.footerLogo {
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+}
