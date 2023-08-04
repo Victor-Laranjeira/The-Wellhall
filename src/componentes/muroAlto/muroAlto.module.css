@@ -82,7 +82,8 @@
 }
 
 .resortInfoContainer {
-  height: 100%;
+  height: 40%;
+  margin-top: 80px;
 }
 
 .resortNameContainer {
@@ -128,4 +129,28 @@
 
 .resortSpace {
   align-self: center;
+}
+
+@media(max-height: 735px) or (max-width: 1080px) {
+  .beachBody {
+    height: 1100px;
+  }
+
+  .beachColumn {
+    grid-template-columns: repeat(2, 50%);
+  }
+  
+  .resortInfoContainer {
+    height: 100%;
+  }
+}
+
+@media(max-height: 538px) or (max-width: 538px) {
+  .beachBody {
+    height: 2050px;
+  }
+
+  .beachColumn {
+    grid-template-columns: repeat(1, 100%);
+  }
 }

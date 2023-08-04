@@ -33,7 +33,7 @@
 
 .beachBody {
   height: 80vh;
-  background-image: linear-gradient(to top, rgba(0, 44, 55, 1), rgba(0, 100, 125, 0.6)), url(../../images/muroAlto.jpg);
+  background-image: linear-gradient(to top, rgba(254, 200, 118, 1), rgba(254, 200, 118, 0.374)), url(../../images/PRACA-DE-CONVIVENCIA--1500x710.jpg);
   /* background-color: linear-gradient(to top, #002C37, #00647d); */
 }
 
@@ -82,15 +82,16 @@
 }
 
 .resortInfoContainer {
-  height: 100%;
+  height: 40%;
+  margin-top: 80px;
 }
 
 .resortNameContainer {
   display: flex;
   height: 30px;
   border-radius: 50px;
-  background-color: #FFC875;
-  color: #042E38;
+  background-color: #042E38;
+  color: #FFC875;
   text-align: center;
   justify-content: center;
 }
@@ -104,8 +105,8 @@
   height: 50px;
   margin: 25px 0px;
   border-radius: 50px;
-  background-color: #FFC875;
-  color: #042E38;
+  background-color: #042E38;
+  color: #FFC875;
   text-align: center;
   justify-content: center;
 }
@@ -119,8 +120,8 @@
   display: flex;
   height: 20px;
   border-radius: 50px;
-  background-color: #FFC875;
-  color: #042E38;
+  background-color: #042E38;
+  color: #FFC875;
   text-align: center;
   text-align: center;
   justify-content: center;
@@ -128,4 +129,28 @@
 
 .resortSpace {
   align-self: center;
+}
+
+@media(max-height: 735px) or (max-width: 1080px) {
+  .beachBody {
+    height: 1100px;
+  }
+
+  .beachColumn {
+    grid-template-columns: repeat(2, 50%);
+  }
+  
+  .resortInfoContainer {
+    height: 100%;
+  }
+}
+
+@media(max-height: 538px) or (max-width: 538px) {
+  .beachBody {
+    height: 2050px;
+  }
+
+  .beachColumn {
+    grid-template-columns: repeat(1, 100%);
+  }
 }

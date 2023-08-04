@@ -1,5 +1,5 @@
 import React from 'react';
-import './about.css';
+import styles from './about.module.css';
 import aboutNature from '../../images/Sustentabilidadejpeg.jpeg'
 import aboutEmpreendimento from '../../images/Empreendimento.png'
 import aboutSketch from '../../images/architecture sketch.jpg'
@@ -14,47 +14,46 @@ const About: React.FC = () => {
 
   const imagesDescription = [
     {
+      image: aboutSketch,
       paragraph: 'A Due Incorporadora é conhecida por desenvolver e construir projetos imobiliários de alta qualidade. Eles trabalham em diferentes segmentos, incluindo residencial, comercial e corporativo. Seus empreendimentos são projetados para atender às necessidades dos clientes e oferecer soluções inovadoras no mercado imobiliário',
       type: 'Projetos imobiliários'
     },
     {
+      image: aboutNature,
       paragraph: 'A empresa tem um forte compromisso com a sustentabilidade em seus projetos. Eles buscam incorporar práticas sustentáveis em todas as etapas do processo, desde a concepção até a construção. A Due Incorporadora valoriza o uso de materiais ecológicos, tecnologias eficientes em termos de energia e o desenvolvimento de áreas verdes nos empreendimentos.',
       type: 'Compromisso com a sustentabilidade'
     },
     {
+      image: aboutEmpreendimento,
       paragraph: 'A Incorporadora Due é reconhecida por sua busca pela excelência e qualidade em todos os seus empreendimentos. Eles têm uma equipe de profissionais experientes e especializados que garantem a entrega de projetos de alto padrão. Além disso, a empresa valoriza a transparência e a confiabilidade nos negócios, construindo relacionamentos sólidos com seus clientes e parceiros.',  
       type: 'Excêlencia e confiabilidade'
     }
   ]
 
   return (
-    <div className='aboutContainer'>
-      <div className='aboutDue'>
-        <div className='aboutDueContainer'>
-          <div className='dueLogoContainer'>
-            <img className='dueLogo' src={dueLogo}/>
+    <div className={styles.aboutContainer}>
+      <div className={styles.aboutDue}>
+        <div className={styles.aboutDueContainer}>
+          <div className={styles.dueLogoContainer}>
+            <img className={styles.dueLogo} src={dueLogo}/>
           </div>
-          <p className='aboutDueDescription'>
+          <p className={styles.aboutDueDescription}>
             Sobre a Due
           </p>
         </div>
-        <div className='aboutGrid'>
-          {
-            images.map(image => {
-              return (
-                <div className='aboutImageContainer'>
-                  <img className='aboutImage' src={image} />
-                </div>
-              )
-            })
-          }
+        <div className={styles.aboutGrid}>
           {
             imagesDescription.map(description => {
               return (
-                <div className='paragraphContainer'>
-                  <p className='paragraphContent'>{description.paragraph}</p>
-                  <div className='contentTypeContainer'>
-                    <p className='contentType'>- {description.type}</p>
+                <div>
+                  <div className={styles.aboutImageContainer}>
+                    <img className={styles.aboutImage} src={description.image} />
+                  </div>
+                  <div className={styles.paragraphContainer}>
+                    <p className={styles.paragraphContent}>{description.paragraph}</p>
+                    <div className={styles.contentTypeContainer}>
+                      <p className={styles.contentType}>- {description.type}</p>
+                    </div>
                   </div>
                 </div>
               )

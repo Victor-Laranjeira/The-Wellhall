@@ -45,10 +45,9 @@
 .aboutGrid {
   display: grid;
   grid-template-columns: repeat(3, 33%);
-  grid-template-rows: repeat(2, 50%);
   justify-content: space-between;
   justify-items: center;
-  height: 88%;
+  height: 100%;
 }
 
 .aboutContainer {
@@ -76,8 +75,9 @@
 .paragraphContainer {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 42%;
   width: 85%;
+  margin-top: 30px;
   justify-content: space-between;
 }
 
@@ -98,4 +98,14 @@
   margin: 0;
   font-size: 14px;
   color: white;
+}
+
+@media(max-height: 790px) or (max-width: 1082px) {
+  .aboutContainer {
+    height: 900px;
+  }
+
+  .aboutGrid {
+    grid-template-columns: repeat(1, 100%);
+  }
 }
