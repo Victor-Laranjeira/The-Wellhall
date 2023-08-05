@@ -6,11 +6,6 @@ import aboutSketch from '../../images/architecture sketch.jpg'
 import dueLogo from '../../images/Due-logo.png'
 
 const About: React.FC = () => {
-  const images = [
-    aboutSketch,
-    aboutNature,
-    aboutEmpreendimento
-  ]
 
   const imagesDescription = [
     {
@@ -45,7 +40,7 @@ const About: React.FC = () => {
           {
             imagesDescription.map(description => {
               return (
-                <div>
+                <div style={{ margin: '15px 0 15px 0' }}>
                   <div className={styles.aboutImageContainer}>
                     <img className={styles.aboutImage} src={description.image} />
                   </div>

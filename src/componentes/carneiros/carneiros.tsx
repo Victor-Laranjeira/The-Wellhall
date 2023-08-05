@@ -6,12 +6,6 @@ import exclusive from '../../images/Praia-Exclusive.jpg'
 import cais from '../../images/thumb-cais.jpg'
 
 const Carneiros: React.FC = () => {
-  const images = [
-    cais,
-    nature,
-    tropi,
-    exclusive,
-  ]
 
   const carneirosInfoArray = [
     {

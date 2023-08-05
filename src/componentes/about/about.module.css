@@ -47,6 +47,7 @@
   grid-template-columns: repeat(3, 33%);
   justify-content: space-between;
   justify-items: center;
+
   height: 100%;
 }
 
@@ -102,10 +103,24 @@
 
 @media(max-height: 790px) or (max-width: 1082px) {
   .aboutContainer {
-    height: 900px;
+    height: 1600px;
   }
 
   .aboutGrid {
     grid-template-columns: repeat(1, 100%);
+  }
+
+  .paragraphContainer {
+    height: 32%;
+  }
+
+  .paragraphContent {
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-height: 344px) or (max-width: 580px) {
+  .aboutContainer {
+    height: fit-content
   }
 }
