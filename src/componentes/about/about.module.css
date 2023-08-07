@@ -101,7 +101,7 @@
   color: white;
 }
 
-@media(max-height: 790px) or (max-width: 1082px) {
+@media(max-height: 727px) or (max-width: 1082px) {
   .aboutContainer {
     height: 1600px;
   }
