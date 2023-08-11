@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
           </div>
           <div className={styles.contactImageContainer}>
             <div className={styles.contactImageCircle}>
-              <img className={styles.contactImage} src={perfil} />
+              <img className={styles.contactImage} src={perfil} alt='imagem'/>
             </div>
           </div>
         </div>

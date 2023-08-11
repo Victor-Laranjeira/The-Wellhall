@@ -6,13 +6,6 @@ import exclusive from '../../images/Praia-Exclusive.jpg'
 import cais from '../../images/thumb-cais.jpg'
 
 const Muroalto: React.FC = () => {
-  const images = [
-    cais,
-    nature,
-    tropi,
-    exclusive,
-  ]
-
   const muroAltoInfoArray = [
     {
       image: cais,
@@ -36,29 +29,6 @@ const Muroalto: React.FC = () => {
       image: exclusive,
       resortName: 'Praia Exclusive',
       resortPrice: 'A partir de R$ 1.800.400',
-      resortSpace: '56,87M² - 90,47M²'
-    }
-  ]
-
-  const carneirosInfoArray = [
-    {
-      resortName: 'VILA COSTA AZUL',
-      resortPrice: 'A PARTIR DE R$ 558.500',
-      resortSpace: '62,79M² - 175,29M²'
-    },
-    {
-      resortName: 'VILA COSTA DO MAR',
-      resortPrice: 'A PARTIR DE R$ 556.500',
-      resortSpace: '30,27M² - 124,87M²'
-    },
-    {
-      resortName: 'NOMAR',
-      resortPrice: 'A PARTIR DE R$ 827.400',
-      resortSpace: '56,87M² - 90,47M²'
-    },
-    {
-      resortName: 'Lançamento',
-      resortPrice: 'FILA DE ESPERA COM CADASTRO',
       resortSpace: '56,87M² - 90,47M²'
     }
   ]

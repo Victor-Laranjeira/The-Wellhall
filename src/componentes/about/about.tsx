@@ -30,7 +30,7 @@ const About: React.FC = () => {
       <div className={styles.aboutDue}>
         <div className={styles.aboutDueContainer}>
           <div className={styles.dueLogoContainer}>
-            <img className={styles.dueLogo} src={dueLogo}/>
+            <img className={styles.dueLogo} src={dueLogo} alt='imagem'/>
           </div>
           <p className={styles.aboutDueDescription}>
             Sobre a Due
@@ -42,7 +42,7 @@ const About: React.FC = () => {
               return (
                 <div style={{ margin: '15px 0 15px 0' }}>
                   <div className={styles.aboutImageContainer}>
-                    <img className={styles.aboutImage} src={description.image} />
+                    <img className={styles.aboutImage} src={description.image} alt='imagem'/>
                   </div>
                   <div className={styles.paragraphContainer}>
                     <p className={styles.paragraphContent}>{description.paragraph}</p>

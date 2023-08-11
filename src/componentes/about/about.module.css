@@ -19,7 +19,7 @@
   margin-right: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
-  justify-content: end;
+  justify-content: flex-end;
   column-gap: 10px;
 }
 
