@@ -4,8 +4,9 @@ import About from '../../componentes/about/about';
 import Footer from '../../componentes/footer/footer'
 import Contact from '../../componentes/contact/contact';
 import Carneiros from '../../componentes/carneiros/carneiros';
+import { NextPage } from 'next';
 
-const LandPage: React.FC = () => {
+const LandPage: NextPage = () => {
   return (
     <>
       <Muroalto />
