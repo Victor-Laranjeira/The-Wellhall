@@ -6,7 +6,7 @@ import Contact from '../../componentes/contact/contact';
 import Carneiros from '../../componentes/carneiros/carneiros';
 import { NextPage } from 'next';
 
-const LandPage: NextPage = () => {
+const LandPage: React.FC = () => {
   return (
     <>
       <Muroalto />

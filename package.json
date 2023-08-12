@@ -17,12 +17,11 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "/",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "react-scripts dev",
+    "build": "react-scripts build",
+    "start": "react-scripts start",
+    "lint": "react-scripts lint"
   },
   "eslintConfig": {
     "extends": [
