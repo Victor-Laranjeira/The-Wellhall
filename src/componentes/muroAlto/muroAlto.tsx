@@ -50,9 +50,9 @@ const Muroalto: React.FC = () => {
         <div className={styles.beachList}>
           <div className={styles.beachColumn}>
             {
-              muroAltoInfoArray.map(muroAltoInfo => {
+              muroAltoInfoArray.map((muroAltoInfo, i) => {
                 return (
-                  <div>
+                  <div key={i}>
                     <div className={styles.imageContainer}>
                       {/* Inserir imagens */}
                       <Image className={styles.image} src={muroAltoInfo.image} alt='Imagem' />

@@ -51,9 +51,9 @@ const Carneiros: React.FC = () => {
         <div className={styles.beachList}>
           <div className={styles.beachColumn}>
             {
-              carneirosInfoArray.map(carneirosInfo => {
+              carneirosInfoArray.map((carneirosInfo, i) => {
                 return (
-                  <div>
+                  <div key={i}>
                     <div className={styles.imageContainer}>
                       {/* Inserir imagens */}
                       <Image className={styles.image} src={carneirosInfo.image} alt='Imagem' />

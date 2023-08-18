@@ -39,9 +39,9 @@ const About: React.FC = () => {
         </div>
         <div className={styles.aboutGrid}>
           {
-            imagesDescription.map(description => {
+            imagesDescription.map((description, i) => {
               return (
-                <div style={{ margin: '15px 0 15px 0' }}>
+                <div key={i} style={{ margin: '15px 0 15px 0' }}>
                   <div className={styles.aboutImageContainer}>
                     <Image className={styles.aboutImage} src={description.image} alt='imagem'/>
                   </div>
