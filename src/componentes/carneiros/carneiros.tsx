@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 import styles from  './carneiros.module.css';
 import costaAzul from '../../images/DUE_Costa-Azul_Fachada-Studio02-1920x994.jpg'
 import costaDoMar from '../../images/FACHADA-COSTA-DO-MAR-1920x994.jpg'
@@ -55,7 +56,7 @@ const Carneiros: React.FC = () => {
                   <div>
                     <div className={styles.imageContainer}>
                       {/* Inserir imagens */}
-                      <img className={styles.image} src={carneirosInfo.image} alt='Imagem' />
+                      <Image className={styles.image} src={carneirosInfo.image} alt='Imagem' />
                     </div>
                     <div className={styles.resortInfoContainer}>
                       <div className={styles.resortNameContainer}>

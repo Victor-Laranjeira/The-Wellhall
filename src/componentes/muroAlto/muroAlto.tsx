@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 import styles from  './muroAlto.module.css';
 import nature from '../../images/COMPLEXO-NATURE-1500x710.jpg'
 import tropi from '../../images/COMPLEXO-TROPI-1500x710.jpg'
@@ -54,7 +55,7 @@ const Muroalto: React.FC = () => {
                   <div>
                     <div className={styles.imageContainer}>
                       {/* Inserir imagens */}
-                      <img className={styles.image} src={muroAltoInfo.image} alt='Imagem' />
+                      <Image className={styles.image} src={muroAltoInfo.image} alt='Imagem' />
                     </div>
                     <div className={styles.resortInfoContainer}>
                       <div className={styles.resortNameContainer}>

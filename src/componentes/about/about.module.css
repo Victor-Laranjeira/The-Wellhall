@@ -20,6 +20,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   justify-content: flex-end;
+  align-items: center;
   column-gap: 10px;
 }
 
@@ -101,7 +102,7 @@
   color: white;
 }
 
-@media(max-height: 727px) or (max-width: 1082px) {
+@media(max-height: 737px) or (max-width: 1082px) {
   .aboutContainer {
     height: 1600px;
   }

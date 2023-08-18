@@ -1,3 +1,5 @@
+import React from 'react'
+import Image from 'next/image'
 import styles from './contact.module.css';
 import perfil from '../../images/Brenno.jpg'
 
@@ -31,7 +33,7 @@ const Contact: React.FC = () => {
           </div>
           <div className={styles.contactImageContainer}>
             <div className={styles.contactImageCircle}>
-              <img className={styles.contactImage} src={perfil} alt='imagem'/>
+              <Image className={styles.contactImage} src={perfil} alt='imagem'/>
             </div>
           </div>
         </div>
